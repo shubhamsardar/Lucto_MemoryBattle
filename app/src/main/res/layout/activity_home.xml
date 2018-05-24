@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dsardy.in.memorybattle.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/titlePoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageViewBack"
+                android:text="1000"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:elevation="1dp"
+                app:srcCompat="@drawable/ic_lens_black_24dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/titleMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageViewPiont2"
+                android:elevation="1dp"
+                android:text="4 luctos"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewPiont2"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:elevation="1dp"
+                app:srcCompat="@drawable/ic_lens_black_24dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDotsbg2">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dotsbg" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="50dp"
+            android:alpha="0.9"
+            android:elevation="2dp"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="homelogo.json"
+            app:lottie_imageAssetsFolder="images2/"
+            app:lottie_loop="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButtonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            app:backgroundTint="@color/colorLightGrey"
+            app:elevation="5dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButtonIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_help_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="goToProfile"
+                app:backgroundTint="@color/colorLightGrey"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButtonRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:backgroundTint="@color/colorLightGrey"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_grade_black_24dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButtonShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:backgroundTint="@color/colorLightGrey"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_share_black_24dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButtonInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:backgroundTint="@color/colorLightGrey"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

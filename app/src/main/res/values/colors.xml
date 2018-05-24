@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#939393</color>
+    <color name="colorLightGrey">#ffffff</color>
+
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#22cfb5</color>
+    <color name="colorLastInput">#38d4ff</color>
+    <color name="colorWrongInput">#b7625e</color>
+    <color name="colorDotsbg">#cad2d1</color>
+    <color name="colorDotsbg2">#cccccc</color>
+    <color name="colorDotsbgWon">#c8d9c5</color>
+    <color name="colorDotsbgLost">#cec2c2</color>
+
+
+
+
+</resources>

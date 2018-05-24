@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "12324601849",
+    "firebase_url": "https://memorybattle-e1736.firebaseio.com",
+    "project_id": "memorybattle-e1736",
+    "storage_bucket": "memorybattle-e1736.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12324601849:android:40900634e5c9380f",
+        "android_client_info": {
+          "package_name": "dsardy.in.memorybattle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12324601849-5nh9nnlj57de1u8deblkge5q4lkkf43u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dsardy.in.memorybattle",
+            "certificate_hash": "1a6ad4cc4156b072b5188d76981b8fe119e3fb69"
+          }
+        },
+        {
+          "client_id": "12324601849-ks7qr413ev111jcv8c1cbvj50fk0f1uj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdSmA9cTg6DiBH6jLCFPQrnb4hll-qtzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12324601849-ks7qr413ev111jcv8c1cbvj50fk0f1uj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dsardy.in.memorybattle.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/imageViewReplay"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_replay_black_24dp" />
+
+            <TextView
+                android:id="@+id/whoesTrun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageViewBack"
+                android:text="Shubham Vs. Hisenberg"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:elevation="1dp"
+                app:srcCompat="@drawable/ic_cancel_black_24dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="3dp"
+        android:max="100" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textViewWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/textViewPoints"
+                android:layout_toRightOf="@+id/textViewPoints"
+                android:text="points will go to the winner"
+                android:textColor="@color/colorLightGrey"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewPointTemp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_lens_black_24dp" />
+
+            <TextView
+                android:id="@+id/textViewPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageViewPointTemp"
+                android:elevation="1dp"
+                android:text="4542"
+                android:textColor="@color/colorLightGrey"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGameField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayout"
+            android:animateLayoutChanges="true"
+            android:elevation="2dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="0.2"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="homelogo.json"
+                app:lottie_imageAssetsFolder="images2/"
+                app:lottie_loop="true" />
+            <TextView
+                android:id="@+id/textViewGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="Hisenberg Playing!"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/gridRecyclarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:elevation="1dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textViewLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Loading..."
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

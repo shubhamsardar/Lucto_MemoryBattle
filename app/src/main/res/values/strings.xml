@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lucto</string>
+
+    <string name="tut1">Repeat the pattern of dots selected.\n
+        One new random dot is aded at each \n
+        turn by a player</string>
+
+    <string name="tut2">Each tap on the correct dot incriments\n
+        the points by a score out of 100\n
+        accordingto the time taken to respond.\n
+        All scored points goes to the winner!</string>
+
+    <string name="tut3">To start a match with a friend.\n
+        Either scan his/her QR code or let \n
+        him/her scan yours and you are \n
+        good to go. Just make sure you have\n
+        a good internet connection.</string>
+
+
+</resources>
