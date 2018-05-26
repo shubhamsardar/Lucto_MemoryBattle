@@ -103,7 +103,6 @@ public class ConnectWithQrActivity extends AppCompatActivity {
                 qrScan.initiateScan();
             }
         });
-        Log.e("onCrt", "...........2");
 
     }
 
